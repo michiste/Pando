@@ -220,7 +220,8 @@ fit_xgb <- function(
     params = list(
         max_depth=3,
         eta=0.01,
-        objective='reg:squarederror'),
+        objective='reg:squarederror',
+        tree_method='gpu_hist'),
     nrounds = 1000,
     nthread = -1,
     ...
