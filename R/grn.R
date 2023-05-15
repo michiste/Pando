@@ -483,7 +483,7 @@ find_modules.Network <- function(
     fit_method <- NetworkParams(object)$method
     xgb_method <- match.arg(xgb_method)
 
-    if (!fit_method %in% c('glm', 'cv.glmnet', 'glmnet', 'brms', 'xgb')){
+    if (!fit_method %in% c('glm', 'cv.glmnet', 'glmnet', 'brms', 'xgb', 'bagging_ridge')){
         stop(paste0('find_modules() is not yet implemented for "', fit_method, '" models'))
     }
 
